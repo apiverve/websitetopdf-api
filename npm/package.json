@@ -1,0 +1,35 @@
+{
+  "name": "@apiverve/websitetopdf",
+  "version": "1.1.12",
+  "description": "Website to PDF is a simple tool for converting a website to PDF. It returns the PDF file generated from the website.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "mocha",
+    "example": "node examples/basic.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apiverve/websitetopdf-api.git",
+    "directory": "npm"
+  },
+  "keywords": [
+    "website to pdf", "website to pdf api", "website to pdf tool", "website to pdf software", "website to pdf service"
+  ],
+  "author": "APIVerve <hello@apiverve.com> (http://apiverve.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apiverve/websitetopdf-api/issues"
+  },
+  "homepage": "https://apiverve.com/marketplace/websitetopdf?utm_source=npm",
+  "devDependencies": {
+    "mocha": "^11.0.1",
+    "chai": "^5.1.2",
+    "dotenv": "^16.4.7"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "promise": "^8.3.0",
+    "axios": "1.13.2"
+  }
+}
