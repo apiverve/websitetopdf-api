@@ -1,0 +1,106 @@
+openapi: 3.0.4
+info:
+  title: Website to PDF
+  description: Website to PDF is a simple tool for converting a website to PDF. It returns the PDF file generated from the website.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/websitetopdf:
+    post:
+      summary: Convert Website to PDF
+      description: Website to PDF is a simple tool for converting a website to PDF. It returns the PDF file generated from the website.
+      operationId: websitetopdf
+      parameters: []
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  marginLeft: 0.4in
+                  marginRight: 0.4in
+                  marginTop: 0.4in
+                  marginBottom: 0.4in
+                  landscape: false
+                  pdfName: 75a31d2a-c96d-428d-9c1e-63795d54f74c.pdf
+                  expires: 1740260149292
+                  url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts
+                  downloadURL: https://storage.googleapis.com/apiverve-helpers.appspot.com/websitetopdf/75a31d2a-c96d-428d-9c1e-63795d54f74c.pdf?GoogleAccessId=1089020767582-compute%40developer.gserviceaccount.com&Expires=1740260149&Signature=GSNCajtyCCkRJEd2n%2FEJ7z6a6E5oa3VmeK5Qkk9P3uYEAFsz4xVNnqZpZ4LDPJhKY9ea8ii1jNX5iKQabiTikwz%2Bg9g1kTxB5572oFPnsWAiaCreKeim3MzuczZRXtLnKpoCEMZWf6aGbYn7kRfKc47tFFbicx74isqxx6Lzs%2BMjKa3k33NUxH9JjQYeStWtnvI9DZorXgpUvjH8QL2H%2FU8wpZSIgpZAY8LMBo07PfWAO2ulinprBnTGhqIErIs71E6CPXnYuRo8r2ZOenQKkTsYNPXXt8vRK9eBh70dBVMEjfYQQA5tyauKvBNdpAmG3DLiKLATut55aKeicioejA%3D%3D
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                url:
+                  type: string
+                  description: The URL of the website to convert to PDF
+                  example: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts
+                marginTop:
+                  type: number
+                  description: The top margin of the PDF in inches (e.g., 0.4)
+                  default: '0.4'
+                  example: 0.4
+                marginRight:
+                  type: number
+                  description: The right margin of the PDF in inches (e.g., 0.4)
+                  default: '0.4'
+                  example: 0.4
+                marginBottom:
+                  type: number
+                  description: The bottom margin of the PDF in inches (e.g., 0.4)
+                  default: '0.4'
+                  example: 0.4
+                marginLeft:
+                  type: number
+                  description: The left margin of the PDF in inches (e.g., 0.4)
+                  default: '0.4'
+                  example: 0.4
+              required:
+              - url
+              example:
+                marginTop: 0.4
+                marginBottom: 0.4
+                marginLeft: 0.4
+                marginRight: 0.4
+                landscape: false
+                url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
