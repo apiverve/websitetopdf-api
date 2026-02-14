@@ -14,25 +14,14 @@ API_URL = 'https://api.apiverve.com/v1/websitetopdf'
 
 def call_websitetopdf_api():
     """
-    Make a POST request to the Website to PDF API
+    Make a GET request to the Website to PDF API
     """
     try:
-        # Request body
-        request_body &#x3D; {
-    &#x27;marginTop&#x27;: 0.4,
-    &#x27;marginBottom&#x27;: 0.4,
-    &#x27;marginLeft&#x27;: 0.4,
-    &#x27;marginRight&#x27;: 0.4,
-    &#x27;landscape&#x27;: false,
-    &#x27;url&#x27;: &#x27;https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts&#x27;
-}
-
         headers = {
-            'x-api-key': API_KEY,
-            'Content-Type': 'application/json'
+            'x-api-key': API_KEY
         }
 
-        response = requests.post(API_URL, headers=headers, json=request_body)
+        response = requests.get(API_URL, headers=headers)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
