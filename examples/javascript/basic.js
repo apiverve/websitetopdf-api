@@ -9,27 +9,15 @@ const API_KEY = process.env.APIVERVE_API_KEY || 'YOUR_API_KEY_HERE';
 const API_URL = 'https://api.apiverve.com/v1/websitetopdf';
 
 /**
- * Make a POST request to the Website to PDF API
+ * Make a GET request to the Website to PDF API
  */
 async function callWebsitetoPDFAPI() {
   try {
-    // Request body
-    const requestBody &#x3D; {
-    &quot;marginTop&quot;: 0.4,
-    &quot;marginBottom&quot;: 0.4,
-    &quot;marginLeft&quot;: 0.4,
-    &quot;marginRight&quot;: 0.4,
-    &quot;landscape&quot;: false,
-    &quot;url&quot;: &quot;https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts&quot;
-};
-
     const response = await fetch(API_URL, {
-      method: 'POST',
+      method: 'GET',
       headers: {
-        'x-api-key': API_KEY,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(requestBody)
+        'x-api-key': API_KEY
+      }
     });
 
     // Check if response is successful
