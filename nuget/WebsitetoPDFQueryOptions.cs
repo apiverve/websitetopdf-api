@@ -39,5 +39,11 @@ namespace APIVerve.API.WebsitetoPDF
         /// </summary>
         [JsonProperty("marginLeft")]
         public string MarginLeft { get; set; }
+
+        /// <summary>
+        /// Set to true for landscape orientation
+        /// </summary>
+        [JsonProperty("landscape")]
+        public string Landscape { get; set; }
     }
 }
