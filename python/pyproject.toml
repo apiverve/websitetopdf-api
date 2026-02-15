@@ -1,17 +1,20 @@
 [project]
 name = "apiverve-websitetopdf"
-version = "1.1.12"
+version = "1.1.13"
 authors = [
   { name="APIVerve", email="hello@apiverve.com" },
 ]
 description = "Website to PDF is a simple tool for converting a website to PDF. It returns the PDF file generated from the website."
-keywords = ["website to pdf", "website to pdf api", "website to pdf tool", "website to pdf software", "website to pdf service"]
+keywords = []
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.7"
+license = "MIT"
+dependencies = [
+    "requests>=2.25.0"
+]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Intended Audience :: Developers",
     "Intended Audience :: Financial and Insurance Industry",
