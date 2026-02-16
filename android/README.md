@@ -26,7 +26,7 @@ Add the dependency:
 
 ```gradle
 dependencies {
-    implementation 'com.github.apiverve:websitetopdf-api:1.1.13'
+    implementation 'com.github.apiverve:websitetopdf-api:1.1.14'
 }
 ```
 
@@ -47,12 +47,12 @@ WebsitetoPDFAPIClient client = new WebsitetoPDFAPIClient("YOUR_API_KEY");
 try {
     // Prepare request parameters
     Map<String, Object> parameters = new HashMap<>();
-    parameters.put("url", "");
+    parameters.put("url", "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts");
     parameters.put("marginTop", 0.4);
     parameters.put("marginRight", 0.4);
     parameters.put("marginBottom", 0.4);
     parameters.put("marginLeft", 0.4);
-    parameters.put("landscape", true);
+    parameters.put("landscape", false);
 
     // Execute the request
     APIResponse response = client.execute(parameters);
