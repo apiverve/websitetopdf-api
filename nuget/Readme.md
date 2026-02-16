@@ -61,12 +61,12 @@ class Program
         var apiClient = new WebsitetoPDFAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new QueryOptions {
-  marginTop = 0.4,
-  marginBottom = 0.4,
-  marginLeft = 0.4,
-  marginRight = 0.4,
-  landscape = false,
-  url = "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts"
+    marginTop = 0.4,
+    marginBottom = 0.4,
+    marginLeft = 0.4,
+    marginRight = 0.4,
+    landscape = false,
+    url = "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts"
 };
 
         // Make the API call
@@ -130,12 +130,12 @@ public class Example
         var apiClient = new WebsitetoPDFAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new QueryOptions {
-  marginTop = 0.4,
-  marginBottom = 0.4,
-  marginLeft = 0.4,
-  marginRight = 0.4,
-  landscape = false,
-  url = "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts"
+    marginTop = 0.4,
+    marginBottom = 0.4,
+    marginLeft = 0.4,
+    marginRight = 0.4,
+    landscape = false,
+    url = "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts"
 };
 
         var response = await apiClient.ExecuteAsync(queryOptions);
@@ -167,12 +167,12 @@ public class Example
         var apiClient = new WebsitetoPDFAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new QueryOptions {
-  marginTop = 0.4,
-  marginBottom = 0.4,
-  marginLeft = 0.4,
-  marginRight = 0.4,
-  landscape = false,
-  url = "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts"
+    marginTop = 0.4,
+    marginBottom = 0.4,
+    marginLeft = 0.4,
+    marginRight = 0.4,
+    landscape = false,
+    url = "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts"
 };
 
         var response = apiClient.Execute(queryOptions);
@@ -209,12 +209,12 @@ public class Example
         var apiClient = new WebsitetoPDFAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new QueryOptions {
-  marginTop = 0.4,
-  marginBottom = 0.4,
-  marginLeft = 0.4,
-  marginRight = 0.4,
-  landscape = false,
-  url = "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts"
+    marginTop = 0.4,
+    marginBottom = 0.4,
+    marginLeft = 0.4,
+    marginRight = 0.4,
+    landscape = false,
+    url = "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts"
 };
 
         try
@@ -270,12 +270,12 @@ public class Example
         apiClient.SetRetryDelay(2000);     // Wait 2 seconds between retries
 
         var queryOptions = new QueryOptions {
-  marginTop = 0.4,
-  marginBottom = 0.4,
-  marginLeft = 0.4,
-  marginRight = 0.4,
-  landscape = false,
-  url = "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts"
+    marginTop = 0.4,
+    marginBottom = 0.4,
+    marginLeft = 0.4,
+    marginRight = 0.4,
+    landscape = false,
+    url = "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts"
 };
 
         try
@@ -316,12 +316,12 @@ apiClient.AddCustomHeader("X-Custom-Header", "custom-value");
 apiClient.AddCustomHeader("X-Request-ID", Guid.NewGuid().ToString());
 
 var queryOptions = new QueryOptions {
-  marginTop = 0.4,
-  marginBottom = 0.4,
-  marginLeft = 0.4,
-  marginRight = 0.4,
-  landscape = false,
-  url = "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts"
+    marginTop = 0.4,
+    marginBottom = 0.4,
+    marginLeft = 0.4,
+    marginRight = 0.4,
+    landscape = false,
+    url = "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts"
 };
 
 var response = await apiClient.ExecuteAsync(queryOptions);
@@ -347,12 +347,12 @@ apiClient.SetLogger(message =>
 });
 
 var queryOptions = new QueryOptions {
-  marginTop = 0.4,
-  marginBottom = 0.4,
-  marginLeft = 0.4,
-  marginRight = 0.4,
-  landscape = false,
-  url = "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts"
+    marginTop = 0.4,
+    marginBottom = 0.4,
+    marginLeft = 0.4,
+    marginRight = 0.4,
+    landscape = false,
+    url = "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts"
 };
 
 var response = await apiClient.ExecuteAsync(queryOptions);
@@ -370,12 +370,12 @@ apiClient.SetMaxRetries(3);           // Retry up to 3 times (default: 0, max: 3
 apiClient.SetRetryDelay(1500);        // Wait 1.5 seconds between retries (default: 1000ms)
 
 var queryOptions = new QueryOptions {
-  marginTop = 0.4,
-  marginBottom = 0.4,
-  marginLeft = 0.4,
-  marginRight = 0.4,
-  landscape = false,
-  url = "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts"
+    marginTop = 0.4,
+    marginBottom = 0.4,
+    marginLeft = 0.4,
+    marginRight = 0.4,
+    landscape = false,
+    url = "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts"
 };
 
 var response = await apiClient.ExecuteAsync(queryOptions);
@@ -386,16 +386,17 @@ var response = await apiClient.ExecuteAsync(queryOptions);
 The API client implements `IDisposable` for proper resource cleanup:
 
 ```csharp
+var queryOptions = new QueryOptions {
+    marginTop = 0.4,
+    marginBottom = 0.4,
+    marginLeft = 0.4,
+    marginRight = 0.4,
+    landscape = false,
+    url = "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts"
+};
+
 using (var apiClient = new WebsitetoPDFAPIClient("[YOUR_API_KEY]"))
 {
-    var queryOptions = new QueryOptions {
-  marginTop = 0.4,
-  marginBottom = 0.4,
-  marginLeft = 0.4,
-  marginRight = 0.4,
-  landscape = false,
-  url = "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts"
-};
     var response = await apiClient.ExecuteAsync(queryOptions);
     Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(response, Newtonsoft.Json.Formatting.Indented));
 }
