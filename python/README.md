@@ -44,7 +44,14 @@ from apiverve_websitetopdf.apiClient import WebsitetopdfAPIClient
 # Initialize the client with your APIVerve API key
 api = WebsitetopdfAPIClient("[YOUR_API_KEY]")
 
-query = { "marginTop": 0.4, "marginBottom": 0.4, "marginLeft": 0.4, "marginRight": 0.4, "landscape": false, "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts" }
+query = {
+    "marginTop": 0.4,
+    "marginBottom": 0.4,
+    "marginLeft": 0.4,
+    "marginRight": 0.4,
+    "landscape": false,
+    "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts"
+}
 
 try:
     # Make the API call
@@ -82,7 +89,14 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "marginTop": 0.4, "marginBottom": 0.4, "marginLeft": 0.4, "marginRight": 0.4, "landscape": false, "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts" }
+query = {
+    "marginTop": 0.4,
+    "marginBottom": 0.4,
+    "marginLeft": 0.4,
+    "marginRight": 0.4,
+    "landscape": false,
+    "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts"
+}
 ```
 
 ###### Simple Request
@@ -128,7 +142,14 @@ from apiverve_websitetopdf.apiClient import WebsitetopdfAPIClient, WebsitetopdfA
 
 api = WebsitetopdfAPIClient("[YOUR_API_KEY]")
 
-query = { "marginTop": 0.4, "marginBottom": 0.4, "marginLeft": 0.4, "marginRight": 0.4, "landscape": false, "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts" }
+query = {
+    "marginTop": 0.4,
+    "marginBottom": 0.4,
+    "marginLeft": 0.4,
+    "marginRight": 0.4,
+    "landscape": false,
+    "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts"
+}
 
 try:
     result = api.execute(query)
@@ -149,7 +170,14 @@ from apiverve_websitetopdf.apiClient import WebsitetopdfAPIClient, WebsitetopdfA
 
 api = WebsitetopdfAPIClient("[YOUR_API_KEY]")
 
-query = { "marginTop": 0.4, "marginBottom": 0.4, "marginLeft": 0.4, "marginRight": 0.4, "landscape": false, "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts" }
+query = {
+    "marginTop": 0.4,
+    "marginBottom": 0.4,
+    "marginLeft": 0.4,
+    "marginRight": 0.4,
+    "landscape": false,
+    "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts"
+}
 
 try:
     result = api.execute(query)
@@ -183,7 +211,14 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_websitetopdf.apiClient import WebsitetopdfAPIClient, WebsitetopdfAPIClientError
 
-query = { "marginTop": 0.4, "marginBottom": 0.4, "marginLeft": 0.4, "marginRight": 0.4, "landscape": false, "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts" }
+query = {
+    "marginTop": 0.4,
+    "marginBottom": 0.4,
+    "marginLeft": 0.4,
+    "marginRight": 0.4,
+    "landscape": false,
+    "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts"
+}
 
 # Using context manager ensures proper cleanup
 with WebsitetopdfAPIClient("[YOUR_API_KEY]") as api:
@@ -209,7 +244,14 @@ from apiverve_websitetopdf.apiClient import WebsitetopdfAPIClient
 # Enable debug mode
 api = WebsitetopdfAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "marginTop": 0.4, "marginBottom": 0.4, "marginLeft": 0.4, "marginRight": 0.4, "landscape": false, "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts" }
+query = {
+    "marginTop": 0.4,
+    "marginBottom": 0.4,
+    "marginLeft": 0.4,
+    "marginRight": 0.4,
+    "landscape": false,
+    "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts"
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -224,8 +266,16 @@ from apiverve_websitetopdf.apiClient import WebsitetopdfAPIClient
 
 api = WebsitetopdfAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "marginTop": 0.4,
+    "marginBottom": 0.4,
+    "marginLeft": 0.4,
+    "marginRight": 0.4,
+    "landscape": false,
+    "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts"
+}
+
 try:
-    query = { "marginTop": 0.4, "marginBottom": 0.4, "marginLeft": 0.4, "marginRight": 0.4, "landscape": false, "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts" }
     result = api.execute(query)
     print(result)
 finally:
