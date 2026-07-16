@@ -20,30 +20,30 @@ namespace APIVerve.API.WebsitetoPDF
         /// The top margin of the PDF in inches (e.g., 0.4)
         /// </summary>
         [JsonProperty("marginTop")]
-        public string MarginTop { get; set; }
+        public double? MarginTop { get; set; }
 
         /// <summary>
         /// The right margin of the PDF in inches (e.g., 0.4)
         /// </summary>
         [JsonProperty("marginRight")]
-        public string MarginRight { get; set; }
+        public double? MarginRight { get; set; }
 
         /// <summary>
         /// The bottom margin of the PDF in inches (e.g., 0.4)
         /// </summary>
         [JsonProperty("marginBottom")]
-        public string MarginBottom { get; set; }
+        public double? MarginBottom { get; set; }
 
         /// <summary>
         /// The left margin of the PDF in inches (e.g., 0.4)
         /// </summary>
         [JsonProperty("marginLeft")]
-        public string MarginLeft { get; set; }
+        public double? MarginLeft { get; set; }
 
         /// <summary>
         /// Set to true for landscape orientation
         /// </summary>
         [JsonProperty("landscape")]
-        public string Landscape { get; set; }
+        public bool? Landscape { get; set; }
     }
 }
