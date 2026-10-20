@@ -2,8 +2,10 @@ openapi: 3.0.4
 info:
   title: Website to PDF
   description: >-
-    Website to PDF is a simple tool for converting a website to PDF. It returns
-    the PDF file generated from the website.
+    Website to PDF renders any public web page into a PDF document from a
+    submitted URL. It returns a temporary signed download link, unique filename,
+    and expiration timestamp, with paid plans adding custom margins and
+    landscape layout.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +20,7 @@ servers:
 paths:
   /v1/websitetopdf:
     post:
-      summary: Convert Website to PDF
+      summary: Website to PDF
       description: Convert a website to a PDF file
       operationId: websitetopdf
       parameters: []
@@ -51,8 +53,7 @@ paths:
                   pdfName: 128deceb-c515-444b-8863-82cb3f6ba632.pdf
                   expires: 1766097122116
                   url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts
-                  downloadURL: >-
-                    https://storage.googleapis.com/apiverve-helpers.appspot.com/websitetopdf/128deceb-c515-444b-8863-82cb3f6ba632.pdf?GoogleAccessId=1089020767582-compute%40developer.gserviceaccount.com&Expires=1766097122&Signature=LI747FKqKj5i5TYX3KIoVy%2FHgXsLOSXfVEUM0Ekqz2SiiYOZWuk3Of7QBDUklSrcbjiHV0AjbzFTKt6oDU83UkN282HbmhxwrolN6v1Zb9twVi1y7gmTpapCiJi%2BpA1r89ioe%2Fe0%2FV7KrIWaqsorzpdJrnMqe2izMWBaZq%2FYkSO2qlwSyhg2R8EsfxYNAANtd%2FuNS0RuIzqTdhNCiTrRirnDAKS3dMCySQJRznHFnyqzNj1OXwVjvdpSMn9XhWCUa%2FDRR8q%2BE9B0yF8eTvIrDSe2OzJT%2FJLc9rxcLfXAny21gtNqrzMJPU4yM9Ge%2BEbepmDnNZf9xpODNsnq5eLF0g%3D%3D
+                  downloadURL: https://storage.googleapis.com/apiverve-helpers.appspot.com/websitetopdf/128deceb-c515-444b-8863-82cb3f6ba632.pdf?GoogleAccessId=1089020767582-compute%40developer.gserviceaccount.com&Expires=1766097122&Signature=LI747FKqKj5i5TYX3KIoVy%2FHgXsLOSXfVEUM0Ekqz2SiiYOZWuk3Of7QBDUklSrcbjiHV0AjbzFTKt6oDU83UkN282HbmhxwrolN6v1Zb9twVi1y7gmTpapCiJi%2BpA1r89ioe%2Fe0%2FV7KrIWaqsorzpdJrnMqe2izMWBaZq%2FYkSO2qlwSyhg2R8EsfxYNAANtd%2FuNS0RuIzqTdhNCiTrRirnDAKS3dMCySQJRznHFnyqzNj1OXwVjvdpSMn9XhWCUa%2FDRR8q%2BE9B0yF8eTvIrDSe2OzJT%2FJLc9rxcLfXAny21gtNqrzMJPU4yM9Ge%2BEbepmDnNZf9xpODNsnq5eLF0g%3D%3D
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':

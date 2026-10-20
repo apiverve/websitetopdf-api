@@ -1,13 +1,13 @@
-# [Website to PDF API](https://apiverve.com/marketplace/websitetopdf?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Website to PDF API](https://apiverve.com/marketplace/websitetopdf?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Website to PDF is a simple tool for converting a website to PDF. It returns the PDF file generated from the website.
+Website to PDF renders any public web page into a PDF document from a submitted URL. It returns a temporary signed download link, unique filename, and expiration timestamp, with paid plans adding custom margins and landscape layout.
 
 The Website to PDF API provides a simple, reliable way to integrate website to pdf functionality into your applications. Built for developers who need production-ready website to pdf capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/websitetopdf?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/websitetopdf?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/websitetopdf?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/websitetopdf?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-POST-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -177,7 +177,7 @@ go get github.com/apiverve/websitetopdf-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Website to PDF API](https://apiverve.com/marketplace/websitetopdf?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Website to PDF API](https://apiverve.com/marketplace/websitetopdf?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/websitetopdf](https://docs.apiverve.com/ref/websitetopdf)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -207,11 +207,36 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Website to PDF API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "marginLeft": "0.4in",
+    "marginRight": "0.4in",
+    "marginTop": "0.4in",
+    "marginBottom": "0.4in",
+    "landscape": false,
+    "pdfName": "128deceb-c515-444b-8863-82cb3f6ba632.pdf",
+    "expires": 1766097122116,
+    "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts",
+    "downloadURL": "https://storage.googleapis.com/apiverve-helpers.appspot.com/websitetopdf/128deceb-c515-444b-8863-82cb3f6ba632.pdf?GoogleAccessId=1089020767582-compute%40developer.gserviceaccount.com&Expires=1766097122&Signature=LI747FKqKj5i5TYX3KIoVy%2FHgXsLOSXfVEUM0Ekqz2SiiYOZWuk3Of7QBDUklSrcbjiHV0AjbzFTKt6oDU83UkN282HbmhxwrolN6v1Zb9twVi1y7gmTpapCiJi%2BpA1r89ioe%2Fe0%2FV7KrIWaqsorzpdJrnMqe2izMWBaZq%2FYkSO2qlwSyhg2R8EsfxYNAANtd%2FuNS0RuIzqTdhNCiTrRirnDAKS3dMCySQJRznHFnyqzNj1OXwVjvdpSMn9XhWCUa%2FDRR8q%2BE9B0yF8eTvIrDSe2OzJT%2FJLc9rxcLfXAny21gtNqrzMJPU4yM9Ge%2BEbepmDnNZf9xpODNsnq5eLF0g%3D%3D"
+  }
 }
 ```
 
@@ -219,7 +244,7 @@ All responses are JSON with this structure:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Website to PDF API](https://apiverve.com/marketplace/websitetopdf?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Website to PDF API](https://apiverve.com/marketplace/websitetopdf?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
