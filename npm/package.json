@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/websitetopdf",
-  "version": "1.2.0",
-  "description": "Website to PDF is a simple tool for converting a website to PDF. It returns the PDF file generated from the website.",
+  "version": "1.2.2",
+  "description": "Website to PDF renders any public web page into a PDF document from a submitted URL. It returns a temporary signed download link, unique filename, and expiration timestamp, with paid plans adding custom margins and landscape layout.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "website to pdf", "website to pdf api", "website to pdf tool", "website to pdf software", "website to pdf service"
+    "website to pdf api", "url to pdf api", "webpage to pdf api", "web page to pdf api", "pdf api"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/websitetopdf-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/websitetopdf?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/websitetopdf?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
