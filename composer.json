@@ -1,0 +1,49 @@
+{
+    "name": "apiverve/websitetopdf",
+    "description": "Website to PDF renders any public web page into a PDF document from a submitted URL. It returns a temporary signed download link, unique filename, and expiration timestamp, with paid plans adding custom margins and landscape layout.",
+    "version": "1.2.2",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "APIVerve",
+            "email": "hello@apiverve.com",
+            "homepage": "https://apiverve.com"
+        }
+    ],
+    "keywords": [
+        "api",
+        "apiverve",
+        "websitetopdf",
+        "website to pdf api",
+        "url to pdf api",
+        "webpage to pdf api",
+        "web page to pdf api",
+        "pdf api"
+    ],
+    "homepage": "https://apiverve.com/marketplace/websitetopdf?utm_source=php&utm_medium=referral&utm_content=homepage",
+    "support": {
+        "email": "hello@apiverve.com",
+        "docs": "https://docs.apiverve.com/ref/websitetopdf",
+        "source": "https://github.com/apiverve/websitetopdf-API/tree/main/php"
+    },
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "APIVerve\\Websitetopdf\\": "php/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "APIVerve\\Websitetopdf\\Tests\\": "php/tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
