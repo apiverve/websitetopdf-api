@@ -30,7 +30,7 @@ class websitetopdfWrapper {
         this.baseURL = 'https://api.apiverve.com/v1/websitetopdf';
 
         // Validation rules for parameters (generated from schema)
-        this.validationRules = {"url":{"type":"string","required":true,"format":"url"},"marginTop":{"type":"number","required":false,"default":"0.4"},"marginRight":{"type":"number","required":false,"default":"0.4"},"marginBottom":{"type":"number","required":false,"default":"0.4"},"marginLeft":{"type":"number","required":false,"default":"0.4"},"landscape":{"type":"boolean","required":false,"default":false}};
+        this.validationRules = {"url":{"type":"string","required":true,"format":"url"},"marginTop":{"type":"number","required":false,"default":"0.4"},"marginRight":{"type":"number","required":false,"default":"0.4"},"marginBottom":{"type":"number","required":false,"default":"0.4"},"marginLeft":{"type":"number","required":false,"default":"0.4"},"landscape":{"type":"boolean","required":false,"default":false},"format":{"type":"string","required":false,"default":"A4"},"printBackground":{"type":"boolean","required":false,"default":true}};
     }
 
     /**

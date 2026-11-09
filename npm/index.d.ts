@@ -30,6 +30,8 @@ declare module '@apiverve/websitetopdf' {
       marginTop:    null | string;
       marginBottom: null | string;
       landscape:    boolean | null;
+      format:       null | string;
+      pageCount:    number | null;
       pdfName:      null | string;
       expires:      number | null;
       url:          null | string;
