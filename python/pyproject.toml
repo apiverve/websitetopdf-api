@@ -1,10 +1,10 @@
 [project]
 name = "apiverve-websitetopdf"
-version = "1.2.4"
+version = "1.2.5"
 authors = [
   { name="APIVerve", email="hello@apiverve.com" },
 ]
-description = "Website to PDF renders any public web page into a PDF document from a submitted URL. It returns a temporary signed download link, unique filename, and expiration timestamp, with paid plans adding custom margins and landscape layout."
+description = "Website to PDF renders any public web page into a PDF document from a submitted URL. It returns a temporary signed download link, unique filename, and expiration timestamp, with paid plans adding the page count, paper size, custom margins, landscape layout and background printing control."
 keywords = ["website to pdf api", "url to pdf api", "webpage to pdf api", "web page to pdf api", "pdf api"]
 readme = "README.md"
 requires-python = ">=3.9"

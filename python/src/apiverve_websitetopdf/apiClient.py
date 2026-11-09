@@ -29,7 +29,9 @@ class WebsitetopdfAPIClient:
         "marginRight": {"type": "number", "required": False, "default": "0.4"},
         "marginBottom": {"type": "number", "required": False, "default": "0.4"},
         "marginLeft": {"type": "number", "required": False, "default": "0.4"},
-        "landscape": {"type": "boolean", "required": False, "default": False}
+        "landscape": {"type": "boolean", "required": False, "default": False},
+        "format": {"type": "string", "required": False, "default": "A4"},
+        "printBackground": {"type": "boolean", "required": False, "default": True}
     }
 
     # Format validation patterns
