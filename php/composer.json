@@ -1,7 +1,7 @@
 {
     "name": "apiverve/websitetopdf",
-    "description": "Website to PDF renders any public web page into a PDF document from a submitted URL. It returns a temporary signed download link, unique filename, and expiration timestamp, with paid plans adding custom margins and landscape layout.",
-    "version": "1.2.4",
+    "description": "Website to PDF renders any public web page into a PDF document from a submitted URL. It returns a temporary signed download link, unique filename, and expiration timestamp, with paid plans adding the page count, paper size, custom margins, landscape layout and background printing control.",
+    "version": "1.2.5",
     "type": "library",
     "license": "MIT",
     "authors": [

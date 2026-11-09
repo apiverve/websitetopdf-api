@@ -39,7 +39,9 @@ class Client
         'marginRight' => ['type' => 'number', 'required' => false],
         'marginBottom' => ['type' => 'number', 'required' => false],
         'marginLeft' => ['type' => 'number', 'required' => false],
-        'landscape' => ['type' => 'boolean', 'required' => false]
+        'landscape' => ['type' => 'boolean', 'required' => false],
+        'format' => ['type' => 'string', 'required' => false],
+        'printBackground' => ['type' => 'boolean', 'required' => false]
     ];
 
     /**
