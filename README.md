@@ -1,6 +1,6 @@
 # [Website to PDF API](https://apiverve.com/marketplace/websitetopdf?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Website to PDF renders any public web page into a PDF document from a submitted URL. It returns a temporary signed download link, unique filename, and expiration timestamp, with paid plans adding custom margins and landscape layout.
+Website to PDF renders any public web page into a PDF document from a submitted URL. It returns a temporary signed download link, unique filename, and expiration timestamp, with paid plans adding the page count, paper size, custom margins, landscape layout and background printing control.
 
 The Website to PDF API provides a simple, reliable way to integrate website to pdf functionality into your applications. Built for developers who need production-ready website to pdf capabilities without the complexity of building from scratch.
 
@@ -232,6 +232,8 @@ A real response from the Website to PDF API:
     "marginTop": "0.4in",
     "marginBottom": "0.4in",
     "landscape": false,
+    "format": "A4",
+    "pageCount": 6,
     "pdfName": "128deceb-c515-444b-8863-82cb3f6ba632.pdf",
     "expires": 1766097122116,
     "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts",
