@@ -47,6 +47,12 @@ namespace APIVerve.API.WebsitetoPDF
         [JsonProperty("landscape")]
         public bool? Landscape { get; set; }
 
+        [JsonProperty("format")]
+        public string Format { get; set; }
+
+        [JsonProperty("pageCount")]
+        public long? PageCount { get; set; }
+
         [JsonProperty("pdfName")]
         public string PdfName { get; set; }
 

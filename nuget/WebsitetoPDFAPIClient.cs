@@ -72,7 +72,9 @@ namespace APIVerve.API.WebsitetoPDF
             { "marginRight", new ValidationRule { Type = "number", Required = false } },
             { "marginBottom", new ValidationRule { Type = "number", Required = false } },
             { "marginLeft", new ValidationRule { Type = "number", Required = false } },
-            { "landscape", new ValidationRule { Type = "boolean", Required = false } }
+            { "landscape", new ValidationRule { Type = "boolean", Required = false } },
+            { "format", new ValidationRule { Type = "string", Required = false } },
+            { "printBackground", new ValidationRule { Type = "boolean", Required = false } }
         };
 
         /// <summary>Format validation patterns</summary>

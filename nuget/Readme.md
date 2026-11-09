@@ -1,7 +1,7 @@
 Website to PDF API
 ============
 
-Website to PDF renders any public web page into a PDF document from a submitted URL. It returns a temporary signed download link, unique filename, and expiration timestamp, with paid plans adding custom margins and landscape layout.
+Website to PDF renders any public web page into a PDF document from a submitted URL. It returns a temporary signed download link, unique filename, and expiration timestamp, with paid plans adding the page count, paper size, custom margins, landscape layout and background printing control.
 
 
 [![NuGet version](https://img.shields.io/nuget/v/APIVerve.API.WebsitetoPDF.svg)](https://www.nuget.org/packages/APIVerve.API.WebsitetoPDF)
@@ -416,6 +416,8 @@ using (var apiClient = new WebsitetoPDFAPIClient("[YOUR_API_KEY]"))
     "marginTop": "0.4in",
     "marginBottom": "0.4in",
     "landscape": false,
+    "format": "A4",
+    "pageCount": 6,
     "pdfName": "128deceb-c515-444b-8863-82cb3f6ba632.pdf",
     "expires": 1766097122116,
     "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts",

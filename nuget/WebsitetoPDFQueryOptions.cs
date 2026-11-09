@@ -45,5 +45,17 @@ namespace APIVerve.API.WebsitetoPDF
         /// </summary>
         [JsonProperty("landscape")]
         public bool? Landscape { get; set; }
+
+        /// <summary>
+        /// Paper size
+        /// </summary>
+        [JsonProperty("format")]
+        public string Format { get; set; }
+
+        /// <summary>
+        /// Print background colors and images; set false for an ink-saving document
+        /// </summary>
+        [JsonProperty("printBackground")]
+        public bool? PrintBackground { get; set; }
     }
 }
