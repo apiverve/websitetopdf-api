@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/websitetopdf",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Website to PDF renders any public web page into a PDF document from a submitted URL. It returns a temporary signed download link, unique filename, and expiration timestamp, with paid plans adding the page count, paper size, custom margins, landscape layout and background printing control.",
   "main": "index.js",
   "types": "index.d.ts",
