@@ -76,16 +76,20 @@ paths:
                   description: The URL of the website to convert to PDF
                 marginTop:
                   type: number
-                  description: The top margin of the PDF in inches (e.g., 0.4)
+                  description: The top margin of the PDF in inches from 0 to 4 (e.g., 0.4)
                 marginRight:
                   type: number
-                  description: The right margin of the PDF in inches (e.g., 0.4)
+                  description: >-
+                    The right margin of the PDF in inches from 0 to 4 (e.g.,
+                    0.4)
                 marginBottom:
                   type: number
-                  description: The bottom margin of the PDF in inches (e.g., 0.4)
+                  description: >-
+                    The bottom margin of the PDF in inches from 0 to 4 (e.g.,
+                    0.4)
                 marginLeft:
                   type: number
-                  description: The left margin of the PDF in inches (e.g., 0.4)
+                  description: The left margin of the PDF in inches from 0 to 4 (e.g., 0.4)
                 landscape:
                   type: boolean
                   description: Set to true for landscape orientation
