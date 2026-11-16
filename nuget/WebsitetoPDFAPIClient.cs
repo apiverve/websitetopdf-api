@@ -68,10 +68,10 @@ namespace APIVerve.API.WebsitetoPDF
         private static readonly Dictionary<string, ValidationRule> _validationRules = new Dictionary<string, ValidationRule>
         {
             { "url", new ValidationRule { Type = "string", Required = true, Format = "url" } },
-            { "marginTop", new ValidationRule { Type = "number", Required = false } },
-            { "marginRight", new ValidationRule { Type = "number", Required = false } },
-            { "marginBottom", new ValidationRule { Type = "number", Required = false } },
-            { "marginLeft", new ValidationRule { Type = "number", Required = false } },
+            { "marginTop", new ValidationRule { Type = "number", Required = false, Min = 0, Max = 4 } },
+            { "marginRight", new ValidationRule { Type = "number", Required = false, Min = 0, Max = 4 } },
+            { "marginBottom", new ValidationRule { Type = "number", Required = false, Min = 0, Max = 4 } },
+            { "marginLeft", new ValidationRule { Type = "number", Required = false, Min = 0, Max = 4 } },
             { "landscape", new ValidationRule { Type = "boolean", Required = false } },
             { "format", new ValidationRule { Type = "string", Required = false } },
             { "printBackground", new ValidationRule { Type = "boolean", Required = false } }
